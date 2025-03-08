@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
+
 </head>
 
 <body>
+    <!-- HEADER -->
     <header>
-        <h1>Contacto</h1>
         <nav>
-            <ul>
+            <div class="logo">Scentia <span>1.1</span></div>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="./html/contacto.html">Contacto</a></li>
                 <li><a href="./html/servicios.html">Servicios</a></li>
@@ -19,24 +22,82 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h2>Déjanos un mensaje</h2>
-        <form action="">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Nombre:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Nombre:</label>
-            <textarea name="mensaje" id="mensaje" required></textarea><br>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Pepito Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="pepitop.08@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" placeholder="Pregunta acerca de..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message"
+                            placeholder="Hazme saber cualquier duda o inquietud que tengas y acá te la resolvemos"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Mi página web - Todos los derechos reservados</p>
-        <p>192016</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">Scentia <span>1.1</span></div>
+                <p>Perfumes artesanales que capturan la esencia de la vida y despiertan los sentidos.</p>
+                <div class="social-icons">
+                    <a href="../img/facebook-brands-logo.svg" class="social-icon">FB</a>
+                    <a href="../img/instagram-brands-logo.svg" class="social-icon">IG</a>
+                    <a href="../img/x-twitter-brands-logo.svg" class="social-icon">TW</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Información</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Envíos y Devoluciones</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-links">
+                    <li>Email: info@scentia.com</li>
+                    <li>Teléfono: +57 314 4275369</li>
+                    <li>Dirección: Calle 13B #26a06 Los Alpes, Ocaña Norte de Santander</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Scentia 1.1 - Todos los derechos reservados
+        </div>
     </footer>
 </body>
 
