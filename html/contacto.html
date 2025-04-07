@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/logoScentia.jpg" />
     <title>Contacto</title>
 
 </head>
@@ -43,11 +44,11 @@
                 <form action="#" method="POST">
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" id="name" name="name" placeholder="Pepito Pérez" required>
+                        <input type="text" id="name" name="name" maxlength="50" placeholder="Pepito Pérez" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" placeholder="pepitop.08@gmail.com" required>
+                        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*" placeholder="pepitop.08@gmail.com" required>
                     </div>
                     <div class="form-group">
                         <label for="subject">Asunto</label>
@@ -56,6 +57,7 @@
                     <div class="form-group">
                         <label for="message">Mensaje</label>
                         <textarea id="message" name="message"
+                            minlength="300"
                             placeholder="Hazme saber cualquier duda o inquietud que tengas y acá te la resolvemos"
                             required></textarea>
                     </div>
@@ -113,12 +115,19 @@
         <div class="copyright">
             &copy; 2025 Scentia 1.1 - Todos los derechos reservados
         </div>
+<<<<<<< HEAD
         <!-- Boton de WhatsApp 
+=======
+>>>>>>> af3e7997eab6fcc32602e78a812ea88a06830588
         <div class="whatsapp-button">
             <a href="https://w.app/7hetfy" target="_blank">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             </a>
+<<<<<<< HEAD
         </div>-->
+=======
+        </div>
+>>>>>>> af3e7997eab6fcc32602e78a812ea88a06830588
     </footer>
 </body>
 
